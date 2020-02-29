@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4cf5b152-30d0-45cf-be0b-d87ad1eef842" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workorder/WorkOrder.py" beforeDir="false" afterPath="$PROJECT_DIR$/workorder/WorkOrder.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,31 +65,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/workorder/ButtonClick.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="279">
               <caret line="62" column="13" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
-                <marker date="1582973524360" expanded="true" signature="400:405" ph="..." />
-                <marker date="1582973524360" expanded="true" signature="635:640" ph="..." />
-                <marker date="1582973524360" expanded="true" signature="916:917" ph="..." />
-                <marker date="1582973524360" expanded="true" signature="2215:2216" ph="..." />
+                <marker date="1582976752441" expanded="true" signature="400:405" ph="..." />
+                <marker date="1582976752441" expanded="true" signature="635:640" ph="..." />
+                <marker date="1582976752441" expanded="true" signature="916:917" ph="..." />
+                <marker date="1582976752441" expanded="true" signature="2215:2216" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/workorder/WorkOrder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="482">
-              <caret line="51" selection-start-line="51" selection-end-line="51" />
+            <state relative-caret-position="86">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
               <folding>
                 <element signature="e#15#30#0" expanded="true" />
-                <marker date="1582973455763" expanded="true" signature="290:295" ph="..." />
-                <marker date="1582973455763" expanded="true" signature="311:340" ph="..." />
+                <marker date="1582976888783" expanded="true" signature="290:295" ph="..." />
+                <marker date="1582976888783" expanded="true" signature="311:340" ph="..." />
               </folding>
             </state>
           </provider>
@@ -149,8 +149,8 @@
         <option value="$PROJECT_DIR$/workorder/testorder.py" />
         <option value="$PROJECT_DIR$/workorder/test_case.py" />
         <option value="$PROJECT_DIR$/workorder/workorder.py" />
-        <option value="$PROJECT_DIR$/workorder/WorkOrder.py" />
         <option value="$PROJECT_DIR$/workorder/ButtonClick.py" />
+        <option value="$PROJECT_DIR$/workorder/WorkOrder.py" />
       </list>
     </option>
   </component>
@@ -160,7 +160,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="1046" />
     <option name="y" value="35" />
     <option name="width" value="1488" />
@@ -356,7 +356,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1046" y="35" width="1488" height="1023" extended-state="1" />
+    <frame x="1046" y="35" width="1488" height="1023" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13165267" />
@@ -473,18 +473,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/workorder/WorkOrder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
-          <folding>
-            <element signature="e#15#30#0" expanded="true" />
-            <marker date="1582973455763" expanded="true" signature="290:295" ph="..." />
-            <marker date="1582973455763" expanded="true" signature="311:340" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Selenium-python/workorder/WorkOrder.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-462" />
@@ -506,10 +494,22 @@
           <caret line="62" column="13" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
-            <marker date="1582973524360" expanded="true" signature="400:405" ph="..." />
-            <marker date="1582973524360" expanded="true" signature="635:640" ph="..." />
-            <marker date="1582973524360" expanded="true" signature="916:917" ph="..." />
-            <marker date="1582973524360" expanded="true" signature="2215:2216" ph="..." />
+            <marker date="1582976752441" expanded="true" signature="400:405" ph="..." />
+            <marker date="1582976752441" expanded="true" signature="635:640" ph="..." />
+            <marker date="1582976752441" expanded="true" signature="916:917" ph="..." />
+            <marker date="1582976752441" expanded="true" signature="2215:2216" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workorder/WorkOrder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="e#15#30#0" expanded="true" />
+            <marker date="1582976888783" expanded="true" signature="290:295" ph="..." />
+            <marker date="1582976888783" expanded="true" signature="311:340" ph="..." />
           </folding>
         </state>
       </provider>
