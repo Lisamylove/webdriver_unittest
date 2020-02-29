@@ -4,7 +4,11 @@
     <bookmark url="file://$PROJECT_DIR$/workorder/ButtonClick.py" line="32" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4cf5b152-30d0-45cf-be0b-d87ad1eef842" name="Default Changelist" comment="" />
+    <list default="true" id="4cf5b152-30d0-45cf-be0b-d87ad1eef842" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workorder/ButtonClick.py" beforeDir="false" afterPath="$PROJECT_DIR$/workorder/ButtonClick.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workorder/WorkOrder.py" beforeDir="false" afterPath="$PROJECT_DIR$/workorder/WorkOrder.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,14 +16,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/BankingDemo$Unittests_for_WorkOrder_WorkOrder_test_WorkOrder.coverage" NAME="Unittests for WorkOrder.WorkOrder.test_WorkOrder Coverage Results" MODIFIED="1582884265633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/workorder" />
+    <SUITE FILE_PATH="coverage/BankingDemo$Unittests_for_WorkOrder_WorkOrder_test_WorkOrder.coverage" NAME="Unittests for WorkOrder.WorkOrder.test_WorkOrder Coverage Results" MODIFIED="1582972886204" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/workorder" />
     <SUITE FILE_PATH="coverage/BankingDemo$Unittests_for_workorder_WorkOrder.coverage" NAME="Unittests for workorder.WorkOrder Coverage Results" MODIFIED="1582705675056" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/workorder" />
     <SUITE FILE_PATH="coverage/BankingDemo$ButtonClick.coverage" NAME="ButtonClick Coverage Results" MODIFIED="1582881994929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/workorder" />
     <SUITE FILE_PATH="coverage/BankingDemo$Unittests_for_workorder_WorkOrder_test_z.coverage" NAME="Unittests for workorder.WorkOrder.test_z Coverage Results" MODIFIED="1582701917030" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/workorder" />
     <SUITE FILE_PATH="coverage/BankingDemo$Unittests_in_workorder_py.coverage" NAME="Unittests in WorkOrder.py Coverage Results" MODIFIED="1582715363342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/workorder" />
     <SUITE FILE_PATH="coverage/BankingDemo$Unittests_for_workorder_WorkOrder_test_Gongdanguanli.coverage" NAME="Unittests for workorder.WorkOrder.test_Gongdanguanli Coverage Results" MODIFIED="1582701492876" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/workorder" />
     <SUITE FILE_PATH="coverage/BankingDemo$Unittests_for_ButtonClick_TestSpan.coverage" NAME="Unittests for ButtonClick.TestSpan Coverage Results" MODIFIED="1582707556188" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/workorder" />
-    <SUITE FILE_PATH="coverage/BankingDemo$Unittests_in_WorkOrder_py.coverage" NAME="Unittests in WorkOrder.py Coverage Results" MODIFIED="1582883981061" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/workorder" />
+    <SUITE FILE_PATH="coverage/BankingDemo$Unittests_in_WorkOrder_py.coverage" NAME="Unittests in WorkOrder.py Coverage Results" MODIFIED="1582973456113" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/workorder" />
     <SUITE FILE_PATH="coverage/BankingDemo$Unittests_for_workorder_WorkOrder_test_aongdanguanli.coverage" NAME="Unittests for workorder.WorkOrder.test_aongdanguanli Coverage Results" MODIFIED="1582700961836" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/workorder" />
     <SUITE FILE_PATH="coverage/BankingDemo$Unittests_for_workorder_WorkOrder_test_NewWorkOrder.coverage" NAME="Unittests for workorder.WorkOrder.test_NewWorkOrder Coverage Results" MODIFIED="1582700872781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/workorder" />
     <SUITE FILE_PATH="coverage/BankingDemo$Unittests_for_WorkOrder_WorkOrder.coverage" NAME="Unittests for WorkOrder.WorkOrder Coverage Results" MODIFIED="1582792100153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/workorder" />
@@ -29,33 +33,34 @@
     <session id="1342049120">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.23" value="2" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="49" />
+          <entry key="py" value="51" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="49" />
+          <entry key="Python" value="51" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="13" />
-          <entry key="py" value="3581" />
+          <entry key="py" value="4183" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="13" />
-          <entry key="Python" value="3581" />
+          <entry key="Python" value="4183" />
         </counts>
       </usages-collector>
     </session>
@@ -65,13 +70,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/workorder/ButtonClick.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="716">
-              <caret line="55" selection-start-line="55" selection-end-line="55" />
+            <state relative-caret-position="308">
+              <caret line="62" column="13" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
-                <marker date="1582886806431" expanded="true" signature="400:405" ph="..." />
-                <marker date="1582886806431" expanded="true" signature="635:640" ph="..." />
-                <marker date="1582886806431" expanded="true" signature="916:917" ph="..." />
+                <marker date="1582973524360" expanded="true" signature="400:405" ph="..." />
+                <marker date="1582973524360" expanded="true" signature="635:640" ph="..." />
+                <marker date="1582973524360" expanded="true" signature="916:917" ph="..." />
+                <marker date="1582973524360" expanded="true" signature="2215:2216" ph="..." />
               </folding>
             </state>
           </provider>
@@ -80,12 +86,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/workorder/WorkOrder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-260">
-              <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+            <state relative-caret-position="482">
+              <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
               <folding>
-                <marker date="1582886806467" expanded="true" signature="267:272" ph="..." />
-                <marker date="1582886806467" expanded="true" signature="288:317" ph="..." />
+                <element signature="e#15#30#0" expanded="true" />
+                <marker date="1582973455763" expanded="true" signature="290:295" ph="..." />
+                <marker date="1582973455763" expanded="true" signature="311:340" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Python3.7.0/Lib/unittest/case.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="149">
+              <caret line="614" selection-start-line="614" selection-end-line="614" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Python3.7.0/Lib/contextlib.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="166">
+              <caret line="116" selection-start-line="116" selection-end-line="116" />
             </state>
           </provider>
         </entry>
@@ -93,7 +118,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/selenium/webdriver/remote/webdriver.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
+            <state relative-caret-position="7546">
               <caret line="359" selection-start-line="359" selection-end-line="359" />
             </state>
           </provider>
@@ -116,6 +141,9 @@
       <find>el-cascader-menus el-popper</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -123,8 +151,8 @@
         <option value="$PROJECT_DIR$/workorder/testorder.py" />
         <option value="$PROJECT_DIR$/workorder/test_case.py" />
         <option value="$PROJECT_DIR$/workorder/workorder.py" />
-        <option value="$PROJECT_DIR$/workorder/ButtonClick.py" />
         <option value="$PROJECT_DIR$/workorder/WorkOrder.py" />
+        <option value="$PROJECT_DIR$/workorder/ButtonClick.py" />
       </list>
     </option>
   </component>
@@ -135,10 +163,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="880" />
-    <option name="y" value="28" />
-    <option name="width" value="1224" />
-    <option name="height" value="1040" />
+    <option name="x" value="1046" />
+    <option name="y" value="35" />
+    <option name="width" value="1488" />
+    <option name="height" value="1023" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -183,7 +211,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for WorkOrder.WorkOrder.test_WorkOrder">
+  <component name="RunManager" selected="Python tests.Unittests in WorkOrder.py">
     <configuration name="ButtonClick" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="BankingDemo" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -275,8 +303,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests for WorkOrder.WorkOrder.test_WorkOrder" />
         <item itemvalue="Python tests.Unittests in WorkOrder.py" />
+        <item itemvalue="Python tests.Unittests for WorkOrder.WorkOrder.test_WorkOrder" />
         <item itemvalue="Python.ButtonClick" />
         <item itemvalue="Python tests.Unittests for WorkOrder.WorkOrder" />
         <item itemvalue="Python tests.Unittests for ButtonClick.TestSpan" />
@@ -297,48 +325,48 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_WorkOrder_WorkOrder_test_WorkOrder - 2020.02.28 at 17h 53m 07s.xml">
+    <history-entry file="Unittests_for_WorkOrder_WorkOrder_test_WorkOrder - 2020.02.29 at 18h 21m 53s.xml">
       <configuration name="Unittests for WorkOrder.WorkOrder.test_WorkOrder" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_WorkOrder_WorkOrder_test_WorkOrder - 2020.02.28 at 17h 56m 13s.xml">
+    <history-entry file="Unittests_for_WorkOrder_WorkOrder_test_WorkOrder - 2020.02.29 at 18h 24m 22s.xml">
       <configuration name="Unittests for WorkOrder.WorkOrder.test_WorkOrder" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_WorkOrder_WorkOrder_test_WorkOrder - 2020.02.28 at 17h 56m 42s.xml">
+    <history-entry file="Unittests_for_WorkOrder_WorkOrder_test_WorkOrder - 2020.02.29 at 18h 33m 22s.xml">
       <configuration name="Unittests for WorkOrder.WorkOrder.test_WorkOrder" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_WorkOrder_WorkOrder_test_WorkOrder - 2020.02.28 at 17h 57m 17s.xml">
-      <configuration name="Unittests for WorkOrder.WorkOrder.test_WorkOrder" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_WorkOrder_py - 2020.02.28 at 17h 57m 48s.xml">
+    <history-entry file="Unittests_in_WorkOrder_py - 2020.02.29 at 18h 39m 57s.xml">
       <configuration name="Unittests in WorkOrder.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_WorkOrder_py - 2020.02.28 at 17h 59m 30s.xml">
+    <history-entry file="Unittests_for_WorkOrder_WorkOrder_test_WorkOrder - 2020.02.29 at 18h 41m 50s.xml">
+      <configuration name="Unittests for WorkOrder.WorkOrder.test_WorkOrder" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_WorkOrder_py - 2020.02.29 at 18h 45m 41s.xml">
       <configuration name="Unittests in WorkOrder.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_WorkOrder_py - 2020.02.28 at 18h 00m 08s.xml">
+    <history-entry file="Unittests_in_WorkOrder_py - 2020.02.29 at 18h 46m 51s.xml">
       <configuration name="Unittests in WorkOrder.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_WorkOrder_WorkOrder_test_WorkOrder - 2020.02.28 at 18h 02m 24s.xml">
-      <configuration name="Unittests for WorkOrder.WorkOrder.test_WorkOrder" configurationId="tests" />
+    <history-entry file="Unittests_in_WorkOrder_py - 2020.02.29 at 18h 48m 33s.xml">
+      <configuration name="Unittests in WorkOrder.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_WorkOrder_WorkOrder_test_WorkOrder - 2020.02.28 at 18h 03m 58s.xml">
-      <configuration name="Unittests for WorkOrder.WorkOrder.test_WorkOrder" configurationId="tests" />
+    <history-entry file="Unittests_in_WorkOrder_py - 2020.02.29 at 18h 49m 40s.xml">
+      <configuration name="Unittests in WorkOrder.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_WorkOrder_WorkOrder_test_WorkOrder - 2020.02.28 at 18h 05m 05s.xml">
-      <configuration name="Unittests for WorkOrder.WorkOrder.test_WorkOrder" configurationId="tests" />
+    <history-entry file="Unittests_in_WorkOrder_py - 2020.02.29 at 18h 51m 28s.xml">
+      <configuration name="Unittests in WorkOrder.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="880" y="28" width="1224" height="1040" extended-state="0" />
+    <frame x="1046" y="35" width="1488" height="1023" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12714776" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10504202" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32869378" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4678801" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39957264" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29912663" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.59388644" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -411,13 +439,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Python3.7.0/Lib/contextlib.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="129" selection-start-line="129" selection-end-line="129" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/selenium/webdriver/common/action_chains.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="149">
@@ -434,7 +455,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/selenium/webdriver/remote/webdriver.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
+        <state relative-caret-position="7546">
           <caret line="359" selection-start-line="359" selection-end-line="359" />
         </state>
       </provider>
@@ -446,26 +467,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../Python3.7.0/Lib/contextlib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="116" selection-start-line="116" selection-end-line="116" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/workorder/WorkOrder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-260">
-          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+        <state relative-caret-position="482">
+          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
           <folding>
-            <marker date="1582886806467" expanded="true" signature="267:272" ph="..." />
-            <marker date="1582886806467" expanded="true" signature="288:317" ph="..." />
+            <element signature="e#15#30#0" expanded="true" />
+            <marker date="1582973455763" expanded="true" signature="290:295" ph="..." />
+            <marker date="1582973455763" expanded="true" signature="311:340" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/workorder/ButtonClick.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="716">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
+        <state relative-caret-position="308">
+          <caret line="62" column="13" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
-            <marker date="1582886806431" expanded="true" signature="400:405" ph="..." />
-            <marker date="1582886806431" expanded="true" signature="635:640" ph="..." />
-            <marker date="1582886806431" expanded="true" signature="916:917" ph="..." />
+            <marker date="1582973524360" expanded="true" signature="400:405" ph="..." />
+            <marker date="1582973524360" expanded="true" signature="635:640" ph="..." />
+            <marker date="1582973524360" expanded="true" signature="916:917" ph="..." />
+            <marker date="1582973524360" expanded="true" signature="2215:2216" ph="..." />
           </folding>
         </state>
       </provider>

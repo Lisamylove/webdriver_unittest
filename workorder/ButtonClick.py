@@ -54,3 +54,22 @@ def department(driver, text, SelectText, sleeps=0):
             sleep(sleeps)
             break
 
+
+# 设备信息
+def deviceInformation(driver, wired=0, wireless=0, obd=0):
+    i = 1
+    div = driver.find_element_by_css_selector('.installInfo')
+    for li in div.find_elements_by_css_selector('.el-col.el-col-4'):
+        input = li.find_element_by_tag_name('input')
+        if input.get_attribute('role') == 'spinbutton':
+            if i == 1:
+                input.clear()
+                input.send_keys(str(wired))
+            if i == 2:
+                input.clear()
+                input.send_keys(str(wireless))
+            if i == 3:
+                input.clear()
+                input.send_keys(str(obd))
+        i += 1
+
