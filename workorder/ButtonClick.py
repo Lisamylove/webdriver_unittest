@@ -1,3 +1,4 @@
+from random import randint
 from time import sleep
 from selenium.webdriver.common.action_chains import ActionChains
 
@@ -72,4 +73,24 @@ def deviceInformation(driver, wired=0, wireless=0, obd=0):
                 input.clear()
                 input.send_keys(str(obd))
         i += 1
+
+
+def address(driver, fatherNode):
+    placeholders = ['请选择省', '请选择市', '请输入详细地址']
+    for index, placeholder in enumerate(placeholders):
+        # f'inputplaceholder="请选择省"'   保持原有格式，传入变量的当前实际值
+        addressPart = fatherNode.find_element_by_css_selector(f'input[placeholder="{placeholder}"]')
+        if index == 2:
+                addressPart.send_keys('望京街道')
+        else:
+            addressPart.click()
+            sleep(1)
+            options = driver.find_elements_by_css_selector('.el-select-dropdown.el-popper:last-child ul.el-scrollbar__view.el-select-dropdown__list li')
+            if options:
+                options[randint(0, len(options) - 1)].click()
+            sleep(1)
+
+
+
+
 
