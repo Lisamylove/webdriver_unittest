@@ -32,6 +32,7 @@ def inputSendKey(driver, placeholder, text, sleeps=0):
     inputs = driver.find_elements_by_tag_name('input')
     for input in inputs:
         if input.get_attribute('placeholder') == placeholder:
+            input.send_keys(Keys.ENTER)
             input.send_keys(text)
             sleep(sleeps)
             break
@@ -94,30 +95,41 @@ def deviceInformation(driver, wired=0, wireless=0, obd=0):
 #             sleep(1)
 
 
-def address(driver, placeholder, work_address, sleeps=0):
-    placeholders = ['请选择省', '请选择市', '请输入详细地址']
-    # 定位到工作地址
-    div = driver.find_element_by_css_selector('.carInfo .wP100.mrg0.el-row:nth-last-child(2)')
-    inputs = div.find_elements_by_tag_name('input')
-    print(inputs)
-    for input in inputs:
-        if input.get_attribute('placeholder') == placeholder:
-            input.send_keys(Keys.ENTER)
-            clickLiByText(driver, work_address, sleeps)
+def address(driver, sleeps=0):
+    data = {
+        '工作地址':{
+            'div_class': '.wP100.mrg0.el-row',
+            'province': '北京市',
+            'city': '西城区',
+            'address': '12345',
+        },
+        '居住地址': {
+            'div_class': '.wP100.mrg0.el-row',
+            'province': '四川省',
+            'city': '成都市',
+            'address': '67890',
+        },
+        '安装地址': {
+            'div_class': '.installInfo .el-row.el-row--flex',
+            'province': '北京市',
+            'city': '海淀区',
+            'address': '呸呸呸',
+        }
+    }
+    for key in data.keys():
+        div_class = data[key]['div_class']
+        province = data[key]['province']
+        city = data[key]['city']
+        address = data[key]['address']
+        divs = driver.find_elements_by_css_selector(div_class)
+        for div in divs:
+            lable_text = div.find_element_by_css_selector('.el-col.el-col-2').text
+            if lable_text == key:
+                inputSendKey(div, '请选择省', province)
+                clickLiByText(driver, province)
+                inputSendKey(div, '请选择市', city)
+                clickLiByText(driver, city)
+                inputSendKey(div, '请输入详细地址', address)
+    sleep(sleeps)
 
-    # for index, placeholder in enumerate(placeholders):
-    #     if index == 0:
-    #         input = div.find_element_by_css_selector('.el-input__inner')
-    #         print(index,placeholder)
-    #         input.send_keys(Keys.ENTER)
-    #         clickLiByText(driver, work_address, sleeps)
-    #         continue
-    #     if index == 1:
-    #         print(index, placeholder)
-    #         input.send_keys(Keys.ENTER)
-    #         clickLiByText(driver, family_address, sleeps)
-    #         continue
-    #     else:
-    #         print(index, placeholder)
-    #         input.send_keys('4343434343')
 
