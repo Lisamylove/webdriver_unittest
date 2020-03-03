@@ -1,6 +1,7 @@
 # coding:utf-8
 import unittest
 from selenium import webdriver
+
 from workorder.ButtonClick import *
 from time import sleep
 
@@ -22,6 +23,7 @@ class WorkOrder(unittest.TestCase):
     def test_WorkOrder(self):
         self.driver = webdriver.Chrome()
         self.driver.get(url_test)
+        # self.driver.maximize_window()
         self.driver.find_element_by_id('username').send_keys(username)
         self.driver.find_element_by_id('password').send_keys(password)
         # sleep(5)
@@ -29,21 +31,27 @@ class WorkOrder(unittest.TestCase):
         clickSpanByText(self.driver, '登 录', 2)
         clickSpanByText(self.driver, '工单管理', 2)
         clickSpanByText(self.driver, '工单系统new', 2)
-        clickLiByText(self.driver, '工单管理new', 1)
+        clickLiByText(self.driver, '工单管理new', 3)
         clickSpanByText(self.driver, '装机', 3)
         # 装机工单
-        inputSendKey(self.driver, '请输入车主姓名', '车晓VIN1')
-        inputSendKey(self.driver, '请输入车主电话', '13252635263')
-        inputSendKey(self.driver, '请输入17位车架号', 'DAS41526352634333')
-        inputSendKey(self.driver, '请输入车辆品牌', '品牌')
-        inputSendKey(self.driver, '请输入车辆型号', '型号')
-        department(self.driver, "广汽", "福建省瑞骅汽车销售有限公司", 1)
-        inputSendKey(self.driver, '请选择时间', '2020-02-26 18:29:46')
-        inputSendKey(self.driver, '请输入现场联系人', '哈哈哈')
-        inputSendKey(self.driver, '请输入现场联系人身份', '哈哈2')
-        inputSendKey(self.driver, '请输入现场联系人电话', '13252635263')
-        deviceInformation(self.driver,1)
-        sleep(5)
+        # inputSendKey(self.driver, '请输入车主姓名', '车晓VIN1')
+        # inputSendKey(self.driver, '请输入车主电话', '13252635263')
+        # inputSendKey(self.driver, '请输入17位车架号', 'DAS41526352634333')
+        # inputSendKey(self.driver, '请输入车辆品牌', '品牌')
+        # inputSendKey(self.driver, '请输入车辆型号', '型号')
+        # department(self.driver, "广汽", "福建省瑞骅汽车销售有限公司", 1)
+        # inputSendKey(self.driver, '请选择时间', '2020-02-26 18:29:46')
+        # clickSpanByText(self.driver, '确定', 1)
+        # inputSendKey(self.driver, '请输入现场联系人', '哈哈哈')
+        # inputSendKey(self.driver, '请输入现场联系人身份', '哈哈2')
+        # inputSendKey(self.driver, '请输入现场联系人电话', '13252635263')
+        # deviceInformation(self.driver, 1)
+        # inputSendKey(self.driver, '请选择省', "吉林省",1)
+
+        # address(self.driver,self.driver.find_element_by_css_selector('.carInfo .wP100.mrg0.el-row:nth-last-child(2)'))
+        # address(self.driver, self.driver.find_element_by_css_selector('.carInfo .wP100.mrg0.el-row:last-child'))
+        address(self.driver, '北京市', 50)
+        sleep(10)
 
 
 if __name__ == '__main__':
