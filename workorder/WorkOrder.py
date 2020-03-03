@@ -51,6 +51,7 @@ class WorkOrder(unittest.TestCase):
         # address(self.driver,self.driver.find_element_by_css_selector('.carInfo .wP100.mrg0.el-row:nth-last-child(2)'))
         # address(self.driver, self.driver.find_element_by_css_selector('.carInfo .wP100.mrg0.el-row:last-child'))
         address(self.driver, '北京市', 50)
+
         sleep(10)
 
 
