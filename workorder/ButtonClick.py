@@ -94,26 +94,30 @@ def deviceInformation(driver, wired=0, wireless=0, obd=0):
 #             sleep(1)
 
 
-def address(driver, selectaddress, sleeps=0):
+def address(driver, placeholder, work_address, sleeps=0):
     placeholders = ['请选择省', '请选择市', '请输入详细地址']
     # 定位到工作地址
     div = driver.find_element_by_css_selector('.carInfo .wP100.mrg0.el-row:nth-last-child(2)')
-    # for div in driver.find_elements_by_css_selector('.carInfo .wP100.mrg0.el-row'):
-    #     label = div.find_element_by_tag_name('label')
-    #     print(label.text)
-    #     if label.text == label_text:
-    for index, placeholder in enumerate(placeholders):
-        if index == 0:
-            input = div.find_element_by_css_selector('.el-input__inner')
-            print(index, placeholder)
+    inputs = div.find_elements_by_tag_name('input')
+    print(inputs)
+    for input in inputs:
+        if input.get_attribute('placeholder') == placeholder:
             input.send_keys(Keys.ENTER)
-    ul = driver.find_element_by_css_selector('.el-scrollbar__view.el-select-dropdown__list')
-    print(ul)
-    lis = ul.find_elements_by_tag_name('li')
-    for li in lis:
-        print(li.text)
-        # ActionChains(driver).move_to_element(li).perform()
-        if selectaddress in li.text:
-            li.click()
-            sleep(sleeps)
-            break
+            clickLiByText(driver, work_address, sleeps)
+
+    # for index, placeholder in enumerate(placeholders):
+    #     if index == 0:
+    #         input = div.find_element_by_css_selector('.el-input__inner')
+    #         print(index,placeholder)
+    #         input.send_keys(Keys.ENTER)
+    #         clickLiByText(driver, work_address, sleeps)
+    #         continue
+    #     if index == 1:
+    #         print(index, placeholder)
+    #         input.send_keys(Keys.ENTER)
+    #         clickLiByText(driver, family_address, sleeps)
+    #         continue
+    #     else:
+    #         print(index, placeholder)
+    #         input.send_keys('4343434343')
+
