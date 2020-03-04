@@ -1,12 +1,10 @@
 from random import randint
 from time import sleep
 from selenium.webdriver.common.action_chains import ActionChains
-
-
-# 点击菜单按钮
 from selenium.webdriver.common.keys import Keys
 
 
+# 点击菜单按钮
 def clickSpanByText(driver, text, sleeps=0):
     spans = driver.find_elements_by_tag_name('span')
     for span in spans:
@@ -27,7 +25,7 @@ def clickLiByText(driver, text, sleeps=0):
             break
 
 
-# 装机弹框页需要填写的信息
+# 装机-纯文本框的信息输入
 def inputSendKey(driver, placeholder, text, sleeps=0):
     inputs = driver.find_elements_by_tag_name('input')
     for input in inputs:
@@ -78,37 +76,22 @@ def deviceInformation(driver, wired=0, wireless=0, obd=0):
                 input.send_keys(str(obd))
         i += 1
 
-# 工作地址、居住地址、安装地址随机选择
-# def address(driver, fatherNode):
-#     placeholders = ['请选择省', '请选择市', '请输入详细地址']
-#     for index, placeholder in enumerate(placeholders):
-#         # f'inputplaceholder="请选择省"'   保持原有格式，传入变量的当前实际值
-#         addressPart = fatherNode.find_element_by_css_selector(f'input[placeholder="{placeholder}"]')
-#         if index == 2:
-#                 addressPart.send_keys('望京街道')
-#         else:
-#             addressPart.click()
-#             sleep(1)
-#             options = driver.find_elements_by_css_selector('.el-select-dropdown.el-popper:last-child ul.el-scrollbar__view.el-select-dropdown__list li')
-#             if options:
-#                 options[randint(0, len(options) - 1)].click()
-#             sleep(1)
 
-
+# 工作地址、居住地址、安装地址
 def address(driver, sleeps=0):
     data = {
-        '工作地址':{
-            'div_class': '.wP100.mrg0.el-row',
-            'province': '北京市',
-            'city': '西城区',
-            'address': '12345',
-        },
-        '居住地址': {
-            'div_class': '.wP100.mrg0.el-row',
-            'province': '四川省',
-            'city': '成都市',
-            'address': '67890',
-        },
+        # '工作地址':{
+        #     'div_class': '.wP100.mrg0.el-row',
+        #     'province': '北京市',
+        #     'city': '西城区',
+        #     'address': '12345',
+        # },
+        # '居住地址': {
+        #     'div_class': '.wP100.mrg0.el-row',
+        #     'province': '四川省',
+        #     'city': '成都市',
+        #     'address': '67890',
+        # },
         '安装地址': {
             'div_class': '.installInfo .el-row.el-row--flex',
             'province': '北京市',
@@ -123,13 +106,11 @@ def address(driver, sleeps=0):
         address = data[key]['address']
         divs = driver.find_elements_by_css_selector(div_class)
         for div in divs:
-            lable_text = div.find_element_by_css_selector('.el-col.el-col-2').text
-            if lable_text == key:
+            label_text = div.find_element_by_css_selector('.el-col.el-col-2').text
+            if label_text == key:
                 inputSendKey(div, '请选择省', province)
                 clickLiByText(driver, province)
                 inputSendKey(div, '请选择市', city)
                 clickLiByText(driver, city)
                 inputSendKey(div, '请输入详细地址', address)
     sleep(sleeps)
-
-
