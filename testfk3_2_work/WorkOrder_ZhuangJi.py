@@ -1,7 +1,7 @@
 # coding:utf-8
 import unittest
 from selenium import webdriver
-from workorder.ButtonClick import *
+from testfk3_2_work.ButtonClick import *
 from time import sleep
 
 

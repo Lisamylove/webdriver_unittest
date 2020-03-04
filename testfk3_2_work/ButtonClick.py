@@ -1,4 +1,3 @@
-from random import randint
 from time import sleep
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.keys import Keys
@@ -30,6 +29,7 @@ def inputSendKey(driver, placeholder, text, sleeps=0):
     inputs = driver.find_elements_by_tag_name('input')
     for input in inputs:
         if input.get_attribute('placeholder') == placeholder:
+            input.clear()
             input.send_keys(Keys.ENTER)
             input.send_keys(text)
             sleep(sleeps)
