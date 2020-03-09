@@ -1,6 +1,7 @@
 from time import sleep
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.keys import Keys
+from config_file import config
 
 
 # 点击菜单按钮
@@ -29,7 +30,6 @@ def inputSendKey(driver, placeholder, text, sleeps=0):
     inputs = driver.find_elements_by_tag_name('input')
     for input in inputs:
         if input.get_attribute('placeholder') == placeholder:
-            input.clear()
             input.send_keys(Keys.ENTER)
             input.send_keys(text)
             sleep(sleeps)
@@ -79,38 +79,19 @@ def deviceInformation(driver, wired=0, wireless=0, obd=0):
 
 # 工作地址、居住地址、安装地址
 def address(driver, sleeps=0):
-    data = {
-        # '工作地址':{
-        #     'div_class': '.wP100.mrg0.el-row',
-        #     'province': '北京市',
-        #     'city': '西城区',
-        #     'address': '12345',
-        # },
-        # '居住地址': {
-        #     'div_class': '.wP100.mrg0.el-row',
-        #     'province': '四川省',
-        #     'city': '成都市',
-        #     'address': '67890',
-        # },
-        '安装地址': {
-            'div_class': '.installInfo .el-row.el-row--flex',
-            'province': '北京市',
-            'city': '海淀区',
-            'address': '呸呸呸',
-        }
-    }
-    for key in data.keys():
-        div_class = data[key]['div_class']
-        province = data[key]['province']
-        city = data[key]['city']
-        address = data[key]['address']
+    for key in config.data.keys():
+        div_class = config.data[key]['div_class']
+        province = config.data[key]['province']
+        city = config.data[key]['city']
+        address = config.data[key]['address']
         divs = driver.find_elements_by_css_selector(div_class)
         for div in divs:
             label_text = div.find_element_by_css_selector('.el-col.el-col-2').text
             if label_text == key:
                 inputSendKey(div, '请选择省', province)
-                clickLiByText(driver, province)
+                clickLiByText(driver.find_element_by_css_selector('body>div.el-select-dropdown.el-popper'), province, 2)
                 inputSendKey(div, '请选择市', city)
-                clickLiByText(driver, city)
+                clickLiByText(driver.find_element_by_css_selector('body>div:nth-child(14)'), city, 2)
                 inputSendKey(div, '请输入详细地址', address)
     sleep(sleeps)
+
