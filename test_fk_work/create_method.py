@@ -1,7 +1,7 @@
 from time import sleep
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.keys import Keys
-from config_file import config
+from config_file import create_config
 
 
 # 点击菜单按钮
@@ -19,6 +19,7 @@ def clickSpanByText(driver, text, sleeps=0):
 def clickLiByText(driver, text, sleeps=0):
     lis = driver.find_elements_by_tag_name('li')
     for li in lis:
+        print(li.text)
         if li.text == text:
             li.click()
             sleep(sleeps)
@@ -79,19 +80,32 @@ def deviceInformation(driver, wired=0, wireless=0, obd=0):
 
 # 工作地址、居住地址、安装地址
 def address(driver, sleeps=0):
-    for key in config.data.keys():
-        div_class = config.data[key]['div_class']
-        province = config.data[key]['province']
-        city = config.data[key]['city']
-        address = config.data[key]['address']
+    for key in create_config.data.keys():
+        div_class = create_config.data[key]['div_class']
+        province = create_config.data[key]['province']
+        city = create_config.data[key]['city']
+        address = create_config.data[key]['address']
         divs = driver.find_elements_by_css_selector(div_class)
         for div in divs:
             label_text = div.find_element_by_css_selector('.el-col.el-col-2').text
             if label_text == key:
                 inputSendKey(div, '请选择省', province)
-                clickLiByText(driver.find_element_by_css_selector('body>div.el-select-dropdown.el-popper'), province, 2)
-                inputSendKey(div, '请选择市', city)
-                clickLiByText(driver.find_element_by_css_selector('body>div:nth-child(14)'), city, 2)
+                province_city(driver, province)
+                # clickLiByText(driver, province, 1)
+                inputSendKey(div, '请选择市', city, 1)
+                # clickLiByText(driver, city, 1)
+                province_city(driver, city)
                 inputSendKey(div, '请输入详细地址', address)
     sleep(sleeps)
+
+
+# 查找所有地址的li元素   该方法查找相对比较快
+def province_city(driver, text, sleeps=0):
+    list_li = driver.find_elements_by_xpath('//ul[@class="el-scrollbar__view el-select-dropdown__list"]/li')
+    print(list_li)
+    for li in list_li:
+        if li.text == text:
+            li.click()
+            sleep(sleeps)
+            break
 

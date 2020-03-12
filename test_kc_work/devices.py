@@ -1,7 +1,6 @@
 import unittest
 from selenium import webdriver
-from testfk3_2_work.ButtonClick import *
-from testkc3_1.Device_ButtonClick import *
+from test_fk_work.create_method import *
 
 
 test_url = 'http://testkc3.chexiao.co'
@@ -20,15 +19,17 @@ class DeviceFile(unittest.TestCase):
     def test_device(self):
         self.driver = webdriver.Chrome()
         self.driver.get(test_url)
+        self.driver.maximize_window()
+        self.driver.find_element_by_id('username').clear()
         inputSendKey(self.driver, '用户名', username)
+        self.driver.find_element_by_id('password').clear()
         inputSendKey(self.driver, '密码', password)
         inputSendKey(self.driver, '验证码', code, 1)
         self.driver.find_element_by_css_selector('.btn.orange.pull-right').submit()
         sleep(3)
         self.driver.find_element_by_css_selector('.sidebar-toggler.hidden-phone').click()
         clickSpanByText(self.driver, '信息管理', 2)
-        clickLiByText(self.driver, '设备信息', 5)
-        # self.driver.find_element_by_xpath('//*[@id="container"]/div[3]/div/div/div[1]/div[3]/a').click()
+        clickLiByText(self.driver, '设备信息', 2)
         sleep(10)
 
 
