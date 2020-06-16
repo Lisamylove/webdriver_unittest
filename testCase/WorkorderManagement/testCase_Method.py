@@ -1,7 +1,7 @@
 from time import sleep
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.keys import Keys
-from config_file import create_config
+from config import configNewCreate
 
 
 # 点击菜单按钮
@@ -80,11 +80,11 @@ def deviceInformation(driver, wired=0, wireless=0, obd=0):
 
 # 工作地址、居住地址、安装地址
 def address(driver, sleeps=0):
-    for key in create_config.data.keys():
-        div_class = create_config.data[key]['div_class']
-        province = create_config.data[key]['province']
-        city = create_config.data[key]['city']
-        address = create_config.data[key]['address']
+    for key in configNewCreate.data.keys():
+        div_class = configNewCreate.data[key]['div_class']
+        province = configNewCreate.data[key]['province']
+        city = configNewCreate.data[key]['city']
+        address = configNewCreate.data[key]['address']
         divs = driver.find_elements_by_css_selector(div_class)
         for div in divs:
             label_text = div.find_element_by_css_selector('.el-col.el-col-2').text

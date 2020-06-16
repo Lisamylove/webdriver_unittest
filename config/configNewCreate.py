@@ -1,11 +1,10 @@
-url = 'http://testfk3.chexiao.co/'  # url--测试环境
-# url = 'http://fk.chexiao.co'  # url--线上环境
+url = 'http://testfk3.chexiao.co'  # url--测试环境
 username = "xinxinceshi"    # 账号
 password = "961111"     # 密码
 code = "535"    # 验证码
 
 # 装机工单的信息
-car_name = "车晓测试查车3"                     # 车主姓名
+car_name = "车晓测试查车3"                # 车主姓名
 car_tel = "13252635263"                   # 车主电话
 car_frame_no = "ZASXCDEDSXCD15551"        # 车架号
 car_brand = "大众"                        # 车辆品牌
